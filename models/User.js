@@ -10,36 +10,36 @@ const UserSchema = new Schema(
     },
 
     email: {
-        type: String,
-        unique: true,
-        // required: 'Username is Required',
-        match: 
+      type: String,
+      unique: true,
+      required: 'Username is Required',
+      match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/],
     },
 
     thoughts: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Thought',
-        },
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Thought',
+      },
     ],
 
     friends: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'User',
-        },
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+      },
     ],
   },
   {
     toJSON: {
-        virtuals: true,
+      virtuals: true,
     },
     id: false,
   }
 );
 
 UserSchema.virtual('friendCount').get(function() {
-    return this.friends.length;
+  return this.friends.length;
 });
 
 const User = model('User', UserSchema);
