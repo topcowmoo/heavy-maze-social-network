@@ -15,7 +15,3 @@ db.once('open', () => {
 });
 
 // npm run dev
-
-// env file 
-
-change the PORT if no env needed
