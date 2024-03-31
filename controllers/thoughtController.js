@@ -127,7 +127,12 @@ const thoughtController = {
       { $pull: { reactions: { reactionId: params.reactionId } } },
       { new: true },
     )
-      .then((dbThoughtData) => res.status(200).json(dbThoughtData))
+      .then((dbThoughtData) => {
+        if (!dbThoughtData) {
+          return res.status(404).json({ message: 'No thought found with this id' });
+        }
+        return res.status(200).json({ message: 'Reaction successfully deleted', dbThoughtData });
+      })
       .catch((err) => res.status(400).json(err));
   },
 };

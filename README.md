@@ -3,13 +3,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/topcowmoo/heavy-maze-social-network">
-    <img src="/public/images/logo.png" alt="Logo" width="300" height="300">
+    <img src="/public/images/logo.png" alt="Logo" width="275" height="275">
   </a>
 
 <h3 align="center">Heavy Maze Social Network</h3>
 
   <p align="center">
-   This project is an API for a social network web application, designed to facilitate sharing thoughts, reacting to friends' thoughts, and managing friend lists. Built using Express.js, MongoDB, and Mongoose, the API provides a robust foundation for handling user interactions and data management within the application. The README includes instructions for setup and usage, along with a link to a walkthrough video demonstrating the API's functionality.
+   This project is an API for a social network web application, designed to facilitate sharing thoughts, reacting to friends' thoughts, and managing friend lists. Built using Express.js, MongoDB and Mongoose, the API provides a robust foundation for handling user interactions and data management within the application. The README includes instructions for setup and usage, along with a link to a walkthrough video demonstrating the API's functionality.
 
 To see how it works please view my demo:
 
@@ -56,31 +56,34 @@ https://drive.google.com/file/d/1oSwtuzCqikUOLJWFxbwRfcQC4jHJNJuS/view?usp=shari
 
 ## About The Project
 
-A social network web application that uses MongoDB and handles large amounts of unstructured data via an API.
+A social network web application that uses MongoDB along with Mongoose and handles large amounts of unstructured data via an API.
 
-Login Page:
+Find All Users
 
-![Screenshot 2024-03-17 at 1 57 32 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/85c67e3a-9009-4d60-b973-5866801a793e)
+![image](https://github.com/topcowmoo/heavy-maze-social-network/assets/149528212/cb888813-cc1d-401d-8d14-97d860f0acf1)
 
-Signup Page:
+Create User
 
-![Screenshot 2024-03-17 at 2 16 23 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/953101ed-7894-4f60-bd4b-4f8056eaec02)
+![image](https://github.com/topcowmoo/heavy-maze-social-network/assets/149528212/c063e68d-c18f-4c85-82c6-d643db20964d)
 
-Homepage:
+Find All Thoughts
 
-![Screenshot 2024-03-17 at 1 57 52 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/9fea9400-cad6-4e74-8cc0-2c586b5045d7)
+![image](https://github.com/topcowmoo/heavy-maze-social-network/assets/149528212/7e90048c-d358-4dc3-8e41-b75660e5b216)
 
-New Post Page:
+Add Friend
 
-![Screenshot 2024-03-17 at 1 58 54 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/2fc20f99-d705-45e4-bbf1-e6a3903ffd5b)
+![image](https://github.com/topcowmoo/heavy-maze-social-network/assets/149528212/ce0ef05e-e424-457b-b567-052ce2e06542)
+
+Add Reaction
+
+![image](https://github.com/topcowmoo/heavy-maze-social-network/assets/149528212/57a5c7b2-b82a-48f8-8621-cf6e12c17b2d)
+
 
 <!-- BUILT WITH -->
 
 ## Built With
 
-![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,mongo&theme=light)](https://skillicons.dev)
 
 
 <!-- INSTALLATION -->
@@ -93,15 +96,14 @@ New Post Page:
    ```
 2. Install NPM packages
    ````sh
-   npm install   ```
+   npm install
    ````
 3. Set up MongoDB and ensure its running on your local machine
-   ````sh
+   ````
 
 4. Start the server from the terminal
    ````sh
-   npm start ```
-   ````
+   npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,15 +138,14 @@ Project Link: [https://github.com/topcowmoo/heavy-maze-social-network](https://g
 
 ## Acknowledgments
 
-- [Pair Programing with Sahil Banati](https://github.com/sbanati)
-- [Sequelize](https://sequelize.org/)
-- [MySQL](https://www.mysql.com/)
+- [Mongoose](https://mongoosejs.com/docs/)
+- [MongoDB](https://learn.mongodb.com/)
 - [ChatGPT](https://chat.openai.com/)
-- [Handlebars](https://handlebarsjs.com/)
-- [Heroku](https://devcenter.heroku.com/)
+- [Insomnia](https://insomnia.rest/)
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
-- [Iconduck](https://iconduck.com/)
 - [Shields.io](https://shields.io/)
+- [Icons8](https://icons8.com/)
+- [Pair Programing with Sahil Banati](https://github.com/sbanati)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
