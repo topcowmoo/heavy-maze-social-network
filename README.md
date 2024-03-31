@@ -9,17 +9,12 @@
 <h3 align="center">Heavy Maze Social Network</h3>
 
   <p align="center">
-   I was challenged with building the back end for an e-commerce site. I took a working Express.js API Welcome to the Dry MVC Tech Blog repo. This repo is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This is the first full-stack web application I have built and it was completely from scratch. I followed the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. Please check out the deployed version, which is being hosted on Heroku (link is below). Thank you.
-
-   Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called content management systems (CMS). Light Employee Manger is a command-line application that manages a company's employee database, using Node.js, Inquirer, and MySQL.
+   This project is an API for a social network web application, designed to facilitate sharing thoughts, reacting to friends' thoughts, and managing friend lists. Built using Express.js, MongoDB, and Mongoose, the API provides a robust foundation for handling user interactions and data management within the application. The README includes instructions for setup and usage, along with a link to a walkthrough video demonstrating the API's functionality.
 
 To see how it works please view my demo:
 
 https://drive.google.com/file/d/1oSwtuzCqikUOLJWFxbwRfcQC4jHJNJuS/view?usp=sharing
 
-
-
-  <br />
   <br />
     <a href="https://github.com/topcowmoo/heavy-maze-social-network"><strong>Explore the docs »</strong></a>
     <br />
@@ -43,20 +38,25 @@ https://drive.google.com/file/d/1oSwtuzCqikUOLJWFxbwRfcQC4jHJNJuS/view?usp=shari
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+    <li><a href="#installation">Installation</a></li>
+    <li>
+      <a href="#contributing">Contributing</a>
     </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+    <li>
+      <a href="#acknowledgments">Acknowledgments</a>
+    </li>
   </ol>
 </details>
+
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-A CMS-style blog site that can publish articles, blog posts, thoughts and opinions.
+A social network web application that uses MongoDB and handles large amounts of unstructured data via an API.
 
 Login Page:
 
@@ -80,6 +80,7 @@ New Post Page:
 
 ![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 
 <!-- INSTALLATION -->
@@ -94,16 +95,10 @@ New Post Page:
    ````sh
    npm install   ```
    ````
-3. Create and source the schema from the terminal
+3. Set up MongoDB and ensure its running on your local machine
    ````sh
-   CREATE DATABASE techblog_db;
-   source ./db/schema.sql   ```
-   ````
-4. Seed the database from the terminal
-   ````sh
-   npm run seed ```
-   ````
-5. Start the server from the terminal
+
+4. Start the server from the terminal
    ````sh
    npm start ```
    ````
