@@ -1,5 +1,7 @@
+// Importing the Thought and User models from the '../models' file
 const { Thought, User } = require('../models');
 
+// Object containing methods for handling thought-related operations
 const thoughtController = {
   // Get all thoughts
   getAllThought(req, res) {
@@ -19,7 +21,7 @@ const thoughtController = {
       });
   },
 
-  // get one Thought by id
+  // Get one thought by ID
   getThoughtById({ params }, res) {
     Thought.findOne({ _id: params.id })
       .populate({
@@ -39,7 +41,7 @@ const thoughtController = {
       });
   },
 
-  // create Thought
+  // Create a thought
   createThought({ body }, res) {
     Thought.create(body)
       .then(({ _id }) => {
@@ -61,7 +63,7 @@ const thoughtController = {
       .catch((err) => res.status(400).json(err));
   },
 
-  // update Thought by id
+  // Update a thought by ID
   updateThought({ params, body }, res) {
     Thought.findOneAndUpdate({ _id: params.id }, body, {
       new: true,
@@ -85,7 +87,7 @@ const thoughtController = {
           return res.status(404).json({ message: 'No thought with this id!' });
         }
 
-        // remove thought id from user's `thoughts` field
+        // Remove thought ID from user's `thoughts` field
         return User.findOneAndUpdate(
           { thoughts: params.id },
           { $pull: { thoughts: params.id } },
@@ -120,7 +122,7 @@ const thoughtController = {
       .catch((err) => res.status(400).json(err));
   },
 
-  // Delete a reaction
+  // Delete a reaction from a thought
   removeReaction({ params }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
@@ -129,12 +131,17 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: 'No thought found with this id' });
+          return res
+            .status(404)
+            .json({ message: 'No thought found with this id' });
         }
-        return res.status(200).json({ message: 'Reaction successfully deleted', dbThoughtData });
+        return res
+          .status(200)
+          .json({ message: 'Reaction successfully deleted', dbThoughtData });
       })
       .catch((err) => res.status(400).json(err));
   },
 };
 
+// Exporting the thoughtController object for use in other parts of the application
 module.exports = thoughtController;
